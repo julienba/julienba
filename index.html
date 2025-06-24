@@ -67,13 +67,15 @@
         }
 
         .header-profile {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            z-index: 3;
+        }
+
+        .header-title {
+            text-align: center;
             margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-            float: right;
         }
 
         .amsterdam-crest {
@@ -349,7 +351,15 @@
             }
 
             .header-profile {
-                gap: 1rem;
+                position: relative;
+                top: auto;
+                right: auto;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .header-title {
+                text-align: center;
             }
 
             .amsterdam-crest {
@@ -420,8 +430,10 @@
                 <div class="header-profile">
                     <img src="images/coat_of_arms_of_amsterdam.svg" alt="Coat of Arms of Amsterdam" class="amsterdam-crest">
                 </div>
-                <h1>Julien Bille</h1>
-                <p class="tagline">Fullstack Developer • I build and scale ideas.</p>
+                <div class="header-title">
+                    <h1>Julien Bille</h1>
+                    <p class="tagline">Fullstack Developer • I build and scale ideas</p>
+                </div>
 
                 <nav>
                     <div class="nav-links">
